@@ -4,10 +4,10 @@ module.exports = (mongoose) => {
     mongoose.Schema(
       {
         temple_id: Number,
+        additionalInfo: Boolean,
         name: String,
         location: String,
         dedicated: String,
-        additionalInfo: Boolean,
       },
       { timestamps: true }
     )
