@@ -7,9 +7,9 @@ module.exports = (mongoose) => {
         additionalInfo: Boolean,
         name: String,
         location: String,
-        dedicated: String,
+        dedicated: String
       },
-      { timestamps: true }
+      { timestamps: false, versionKey:false }
     )
   );
 

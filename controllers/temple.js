@@ -14,9 +14,10 @@ exports.create = (req, res) => {
   // Create a Temple
   const temple = new Temple({
     temple_id: req.body.temple_id,
+    additionalInfo: req.body.additionalInfo,
     name: req.body.name,
-    description: req.body.description,
     location: req.body.location,
+    dedicated: req.body.dedicated
   });
   // Save Temple in the database
   temple
